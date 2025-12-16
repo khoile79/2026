@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Năm Mới Bính Ngọ 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red-tet: #c62828;
+            --gold-tet: #ffea00;
+            --dark-red: #8e0000;
+            --orange-fire: #ff6f00; /* Màu nhấn cho năm Bính Ngọ */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, var(--red-tet) 0%, var(--dark-red) 100%);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--gold-tet);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Pháo hoa li ti */
+        .firework-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            background-image: radial-gradient(circle, #fff 1px, transparent 1px);
+            background-size: 80px 80px;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin: 0;
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #fff, 0 0 20px var(--gold-tet); }
+            to { text-shadow: 0 0 20px var(--orange-fire), 0 0 30px #ff3d00; }
+        }
+
+        .year {
+            font-size: clamp(3rem, 12vw, 5rem);
+            font-weight: 800;
+            display: block;
+            margin-top: 5px;
+            color: white;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Cải tiến Câu đối: Vừa vặn và chuyên nghiệp */
+        .cau-doi {
+            background-color: #b71c1c;
+            border: 3px solid var(--gold-tet);
+            outline: 2px solid #b71c1c;
+            outline-offset: 2px;
+            padding: 25px 10px;
+            width: 60px; /* Cố định chiều rộng */
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Oswald', sans-serif; /* Font hẹp giúp chữ vừa vặn hơn */
+            font-size: 1.6rem;
+            line-height: 1.2;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            box-shadow: 5px 15px 25px rgba(0,0,0,0.5);
+            border-radius: 40px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            user-select: none;
+        }
+
+        .cau-doi:hover {
+            transform: translateY(-10px) scale(1.05);
+            background-color: #d32f2f;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .mascot-container {
+            text-align: center;
+            z-index: 5;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .mascot {
+            width: clamp(200px, 40vw, 300px);
+            filter: drop-shadow(0 0 25px var(--orange-fire));
+            animation: gallop 3s ease-in-out infinite;
+        }
+
+        @keyframes gallop {
+            0%, 100% { transform: translateY(0) rotate(-2deg); }
+            50% { transform: translateY(-25px) rotate(2deg); }
+        }
+
+        #flower-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 99;
+        }
+
+        .flower {
+            position: absolute;
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
+        }
+
+        .footer {
+            padding: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive cho di động */
+        @media (max-width: 600px) {
+            .main-content { gap: 10px; }
+            .cau-doi { 
+                min-height: 280px; 
+                width: 45px; 
+                font-size: 1.1rem;
+                padding: 15px 5px;
+            }
+            .mascot { width: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="firework-bg"></div>
+    <div id="flower-container"></div>
+
+    <div class="header">
+        <h1>Chúc Mừng Năm Mới</h1>
+        <div class="year">BÍNH NGỌ 2026</div>
+    </div>
+            </p>
+    <div class="main-content">
+        <div class="cau-doi">MÃ ĐÁO THÀNH CÔNG</div>
+        
+        <div class="mascot-container">
+            <img src="ngo.png" class="mascot">
+            <p style="font-size: 1.3rem; font-style: italic; margin-top: 20px; color: #fff;">
+                Vạn sự như ý - Đắc lộc vinh hoa
+            </p>
+        </div>
+
+        <div class="cau-doi">PHÚ QUÝ AN KHANG</div>
+    </div>
+
+    <div class="footer">
+    
+    </div>
+
+    <script>
+        const flowerContainer = document.getElementById('flower-container');
+        const flowers = ['🧧', '🌸', '🏵️', '✨', '🐎']; // Thêm icon ngựa nhỏ và hoa đào
+
+        function createFlower() {
+            if (flowerContainer.childElementCount > 35) return;
+
+            const flower = document.createElement('div');
+            const type = flowers[Math.floor(Math.random() * flowers.length)];
+            
+            flower.className = 'flower';
+            flower.innerText = type;
+            flower.style.left = Math.random() * 100 + 'vw';
+            flower.style.fontSize = Math.random() * 20 + 20 + 'px';
+            flower.style.opacity = Math.random();
+            flower.style.top = '-50px';
+            
+            const duration = Math.random() * 5 + 4; 
+            flower.style.transition = `transform ${duration}s linear, opacity ${duration}s ease-in`;
+
+            flowerContainer.appendChild(flower);
+
+            setTimeout(() => {
+                const rotation = Math.random() * 1000;
+                const drift = (Math.random() - 0.5) * 300; 
+                flower.style.transform = `translate(${drift}px, 110vh) rotate(${rotation}deg)`;
+                flower.style.opacity = '0';
+            }, 100);
+
+            setTimeout(() => { flower.remove(); }, duration * 1000);
+        }
+
+        setInterval(createFlower, 400);
+    </script>
+</body>
+</html>
